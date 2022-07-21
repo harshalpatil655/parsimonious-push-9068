@@ -1,144 +1,134 @@
-.but1 {
+.butn1 {
   position: absolute;
-  top: 38%;
-  left: 23%;
-  color: black;
+  top: 15%;
+  left: 20%;
   background-color: white;
-  border-radius: 0;
-  font-weight: 350;
+  padding: 10px;
 }
-.but2 {
+.butn2 {
   position: absolute;
-  top: 30%;
-  left: 76%;
-  color: black;
+  top: 12.5%;
+  left: 77%;
   background-color: white;
-  border-radius: 0;
-  font-weight: 350;
+  padding: 10px;
 }
-.but2:hover {
+.butn3 {
+  position: absolute;
+  top: 20%;
+  left: 73%;
+  background-color: white;
+  padding: 10px;
+}
+.butn4 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  background-color: white;
+  padding: 10px;
+}
+.butn5 {
+  position: absolute;
+  top: 25%;
+  left: 42%;
+  background-color: white;
+  padding: 10px;
+}
+.butn6 {
+  position: absolute;
+  top: 27.5%;
+  left: 73%;
+  background-color: white;
+  padding: 10px;
+}
+.butn7 {
+  position: absolute;
+  top: 34.25%;
+  left: 25%;
+  background-color: white;
+  padding: 10px;
+}
+.butn8 {
+  position: absolute;
+  top: 34.25%;
+  left: 75%;
+  background-color: white;
+  padding: 10px;
+}
+.butn9 {
+  position: absolute;
+  top: 45.5%;
+  left: 45%;
+  background-color: white;
+  padding: 10px;
+}
+
+.butn2:hover {
   text-decoration: underline;
 }
-.but1:hover {
+.butn1:hover {
   text-decoration: underline;
 }
 .img1:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
 .img2:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but3 {
-  position: absolute;
-  top: 51%;
-  left: 72%;
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  font-weight: 350;
-}
+
 .img3:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but4 {
-  position: absolute;
-  top: 66%;
-  left: 16%;
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  font-weight: 350;
-}
+
 .img4:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but5 {
-  position: absolute;
-  top: 66%;
-  left: 46%;
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  font-weight: 350;
-}
+
 .img5:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but6 {
-  position: absolute;
-  top: 72%;
-  left: 72%;
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  font-weight: 350;
-}
+
 .img6:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but7 {
-  position: absolute;
-  top: 94%;
-  left: 22%;
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  font-weight: 350;
-}
+
 .img7:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but8 {
-  position: absolute;
-  top: 94%;
-  left: 76%;
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  font-weight: 350;
-}
+
 .img8:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but9 {
-  position: absolute;
-  top: 74%;
-  left: 86%;
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  font-weight: 350;
-}
+
 .img9:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  transform: scale(1.09);
+  transition: all 0.9s ease;
 }
-.but3:hover {
+.butn3:hover {
   text-decoration: underline;
 }
-.but4:hover {
+.butn4:hover {
   text-decoration: underline;
 }
-.but5:hover {
+.butn5:hover {
   text-decoration: underline;
 }
-.but6:hover {
+.butn6:hover {
   text-decoration: underline;
 }
-.but7:hover {
+.butn7:hover {
   text-decoration: underline;
 }
-.but8:hover {
+.butn8:hover {
   text-decoration: underline;
 }
-.but9:hover {
+.butn9:hover {
   text-decoration: underline;
 }
