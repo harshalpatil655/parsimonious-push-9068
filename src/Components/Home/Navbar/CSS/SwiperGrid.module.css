@@ -1,0 +1,96 @@
+.bor {
+  border-top: solid gray;
+  width: 90%;
+  margin: auto;
+}
+.head {
+  text-align: start;
+  margin-left: 100px;
+
+  font-size: 30px;
+}
+.box2 {
+  margin: auto;
+  overflow: initial;
+}
+.bor2 {
+  border-top: solid gray;
+  width: 90%;
+  margin: auto;
+}
+.head2 {
+  text-align: start;
+  margin-left: 100px;
+  font-size: 30px;
+}
+.bor3 {
+  border-top: solid gray;
+  width: 93%;
+  margin: auto;
+}
+.head3 {
+  text-align: center;
+  margin-left: 100px;
+  font-size: 30px;
+}
+
+.bor4 {
+  border-top: solid gray;
+  text-align: start;
+  width: 93%;
+  margin: auto;
+}
+.head4 {
+  text-align: start;
+  margin-left: 100px;
+  font-size: 30px;
+}
+.img1:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img2:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img3:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img4:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img5:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img6:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img7:hover {
+  transform: scale(1.09);
+  transition: all 0.7s ease;
+}
+.img8:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img9:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+
+.img10:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img11:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
+.img12:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}

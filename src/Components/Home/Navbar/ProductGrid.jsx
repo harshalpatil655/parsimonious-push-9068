@@ -1,11 +1,11 @@
-import { Box, Button, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
 import styles from "./CSS/ProductGrid.module.css";
 
 export const ProductGrid = () => {
   return (
     <div>
-      <Box style={{ margin: "auto" }} w="93%" p={4} color="white">
+      <Box style={{ margin: "auto" }} w="93%" p={4}>
         <Grid
           templateRows="repeat(12, 1fr)"
           templateColumns="repeat(12, 1fr)"
@@ -18,9 +18,9 @@ export const ProductGrid = () => {
                 src="https://images.ctfassets.net/5de70he6op10/6L7PLVnwzkVxVSXUzc12WN/013637593738020d6885650c300d2207/LS_M1.jpg?w=1756&q=80&fm=webp"
                 alt="one"
               />
-              <Button className={styles.but1}>
-                Shop new clothing & accessories
-              </Button>
+              <button className={styles.butn1}>
+                shop new clothing and accessories
+              </button>
             </div>
           </GridItem>
           <GridItem rowSpan={3} colSpan={4}>
@@ -30,7 +30,7 @@ export const ProductGrid = () => {
                 src="https://images.ctfassets.net/5de70he6op10/64HS0WF1TcoLPFrhsQeQzH/676b1f2c8c04a9d6e79d93cdbf4f3220/RR_Jeans.jpg?w=856&q=80&fm=webp"
                 alt="two"
               />
-              <Button className={styles.but2}>shop jeans</Button>
+              <button className={styles.butn2}>shop jeans</button>
             </div>
           </GridItem>
           <GridItem rowSpan={3} colSpan={4}>
@@ -40,7 +40,7 @@ export const ProductGrid = () => {
                 src="https://images.ctfassets.net/5de70he6op10/zMXnxHpTVbbedCkuXDs3j/0a25583d2ace13fba8e11b2709f6701a/RR_NewArrivals.jpg?w=856&q=80&fm=webp"
                 alt="three"
               />
-              <Button className={styles.but3}>shop kitchen & dining</Button>
+              <button className={styles.butn3}>shop kitchen & dining</button>
             </div>
           </GridItem>
           <GridItem rowSpan={4} colSpan={4}>
@@ -51,7 +51,7 @@ export const ProductGrid = () => {
                 alt="four"
               />
             </div>
-            <Button className={styles.but4}>shop tops</Button>
+            <button className={styles.butn4}>shop tops</button>
           </GridItem>
           <GridItem rowSpan={4} colSpan={4}>
             <div>
@@ -61,7 +61,7 @@ export const ProductGrid = () => {
                 alt="five"
               />
             </div>
-            <Button className={styles.but5}>shop tops</Button>
+            <button className={styles.butn5}>shop new accessories</button>
           </GridItem>
           <GridItem rowSpan={3} colSpan={4}>
             <div>
@@ -70,7 +70,7 @@ export const ProductGrid = () => {
                 src="https://images.ctfassets.net/5de70he6op10/2A5JcSP9weOEvCYtMm5D8Y/75c5d03edf5e2a36e0a3ca453b1dfee7/RR_BHLDN.jpg?w=856&q=80&fm=webp"
                 alt="six"
               />
-              <Button className={styles.but6}>shop bhldn weddings</Button>
+              <button className={styles.butn6}>shop bhldn weddings</button>
             </div>
           </GridItem>
           <GridItem rowSpan={4} colSpan={8}>
@@ -80,7 +80,9 @@ export const ProductGrid = () => {
                 src="https://images.ctfassets.net/5de70he6op10/1kAlTgmTgNVwEvOdaygujG/24f380d0322fd28b161dbbf9b439d6d4/LS_M2.jpg?w=1756&q=80&fm=webp"
                 alt="seven"
               />
-              <Button className={styles.but7}>shop the exclusive collab</Button>
+              <button className={styles.butn7}>
+                shop the exclusive collab
+              </button>
             </div>
           </GridItem>
           <GridItem rowSpan={4} colSpan={4}>
@@ -90,25 +92,25 @@ export const ProductGrid = () => {
                 src="https://images.ctfassets.net/5de70he6op10/6TIhpD3Lh2NHWsTFjH5A4h/2dc26213931d34768ea089d58dedd3f8/071122_HPG_RR_Shoes.jpg?w=856&q=80&fm=webp"
                 alt="eight"
               />
-              <Button className={styles.but8}>shop shoes</Button>
+              <button className={styles.butn8}>shop shoes</button>
             </div>
           </GridItem>
         </Grid>
       </Box>
-      <Box style={{ margin: "auto" }} w="93%" p={4} color="white">
+      <Box style={{ margin: "auto" }} w="93%" p={4}>
         <Grid
           templateRows="repeat(1, 1fr)"
           templateColumns="repeat(1, 1fr)"
           gap={4}
         >
-          <GridItem rowSpan={1} colSpan={1} bg="tomato">
+          <GridItem rowSpan={1} colSpan={1}>
             <div>
               <img
                 className={styles.img9}
                 src="https://images.ctfassets.net/5de70he6op10/FVlmjk59pwYLRQ7fpD8TI/98f6c5a1d360224a786a4cbb3f998ab4/LS_M3.jpg?w=2694&q=80&fm=webp"
                 alt="nine"
               />
-              <Button className={styles.but9}>shop dresses</Button>
+              <button className={styles.butn9}>shop dresses</button>
             </div>
           </GridItem>
         </Grid>
