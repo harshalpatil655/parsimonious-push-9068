@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./CSS/ProductGrid.module.css";
 
 export const ProductGrid = () => {
@@ -18,9 +19,11 @@ export const ProductGrid = () => {
                 src="https://images.ctfassets.net/5de70he6op10/6L7PLVnwzkVxVSXUzc12WN/013637593738020d6885650c300d2207/LS_M1.jpg?w=1756&q=80&fm=webp"
                 alt="one"
               />
-              <button className={styles.butn1}>
-                shop new clothing and accessories
-              </button>
+              <NavLink to="/shopping">
+                <button className={styles.butn1}>
+                  shop new clothing and accessories
+                </button>
+              </NavLink>
             </div>
           </GridItem>
           <GridItem rowSpan={3} colSpan={4}>
