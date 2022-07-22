@@ -1,0 +1,7 @@
+.prod {
+  display: flex;
+}
+.prod:hover {
+  transform: scale(1.09);
+  transition: all 0.9s ease;
+}
