@@ -19,7 +19,7 @@ import {
   Stack,
   useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useContext, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { BsBag } from "react-icons/bs";
@@ -29,6 +29,17 @@ import styles from "../Navbar/CSS/Topbar.module.css";
 
 export const Topbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [value, setValue] = useState("false");
+
+  const handleClick = () => {
+    setValue(true);
+
+    if (value === true) {
+      alert("Login Successful");
+    }
+  };
+
   return (
     <div>
       <Box style={{ height: "60px" }} bg="#1d7c7a" w="100%" p={4} color="white">
@@ -76,7 +87,7 @@ export const Topbar = () => {
                   <MenuItem>Registry</MenuItem>
 
                   <div>
-                    <Button onClick={onOpen}>Sign In</Button>
+                    <Button onClick={onOpen}>Click To Signup</Button>
 
                     <Modal isOpen={isOpen} onClose={onClose}>
                       <ModalOverlay />
@@ -93,17 +104,17 @@ export const Topbar = () => {
                           </p>
                           <FormControl isRequired>
                             <FormLabel>First name</FormLabel>
-                            <Input type="text" placeholder="First name" />
+                            <Input placeholder="First name" />
                             <FormLabel style={{ marginTop: "10px" }}>
                               Email
                             </FormLabel>
-                            <Input type="email" placeholder="Enter Email" />
+                            <Input placeholder="Enter Email" />
                             <FormLabel>Mobile Number</FormLabel>
-                            <Input type="number" placeholder="Enter Number" />
+                            <Input placeholder="Enter Number" />
                             <FormLabel>Date Of Birth</FormLabel>
                             <Input type="date" />
                             <FormLabel>Set Password</FormLabel>
-                            <Input type="password" placeholder="Set Password" />
+                            <Input placeholder="Set Password" />
                           </FormControl>
                         </ModalBody>
 
@@ -111,7 +122,9 @@ export const Topbar = () => {
                           <Button colorScheme="blue" mr={3} onClick={onClose}>
                             Close
                           </Button>
-                          <Button variant="ghost">Sign In</Button>
+                          <Button onClick={handleClick} variant="ghost">
+                            Sign In
+                          </Button>
                         </ModalFooter>
                       </ModalContent>
                     </Modal>
@@ -183,11 +196,13 @@ export const Topbar = () => {
             />
           </div>
           <div>
-            <BsBag
-              style={{ marginLeft: "20px", marginBottom: "5px" }}
-              color="gray"
-              size="2rem"
-            />
+            <NavLink to="/product">
+              <BsBag
+                style={{ marginLeft: "20px", marginBottom: "5px" }}
+                color="gray"
+                size="2rem"
+              />
+            </NavLink>
           </div>
         </HStack>
       </Box>
