@@ -1,16 +1,20 @@
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Grid,
   GridItem,
   Select,
   StackDivider,
   VStack,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GrPowerReset } from "react-icons/gr";
 import Navbar from "../Components/Home/Navbar/Navbar";
 import styles from "./Shopping.module.css";
+import FooterPart from "../Components/Home/Navbar/FooterPart";
+import { CartContext } from "../Context/CartProvider";
 
 let mydata = [
   {
@@ -233,6 +237,21 @@ let mydata = [
 
 export const Shopping = () => {
   const [data, setData] = useState(mydata);
+
+  const { state, dispatch } = useContext(CartContext);
+  const handleClick = (id) => {
+    data.filter((el) => {
+      if (el.id === id) {
+        dispatch({
+          type: "add",
+          id: Date.now(),
+          imgUrl: el.img,
+          price: el.price,
+        });
+      }
+    });
+  };
+  console.log(state);
   return (
     <div>
       <Navbar />
@@ -384,7 +403,7 @@ export const Shopping = () => {
                 {data.map((el) => (
                   <div className={styles.prod} key={el.id}>
                     <GridItem colSpan={1}>
-                      <div style={{ height: "370px" }}>
+                      <div style={{ height: "400px" }}>
                         <img src={el.img} alt={`img ${el.id}`} />
                         <p style={{ fontSize: "12px" }}>{el.name}</p>
                         <h1>{el.price}</h1>
@@ -414,6 +433,16 @@ export const Shopping = () => {
                             White
                           </option>
                         </Select>
+                        <div>
+                          <Button
+                            onClick={() => handleClick(el.id)}
+                            rightIcon={<ArrowForwardIcon />}
+                            colorScheme="teal"
+                            variant="outline"
+                          >
+                            Add to Cart
+                          </Button>
+                        </div>
                       </div>
                     </GridItem>
                   </div>
@@ -423,6 +452,7 @@ export const Shopping = () => {
           </div>
         </div>
       </div>
+      <FooterPart />
     </div>
   );
 };
